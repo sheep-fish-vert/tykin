@@ -1,10 +1,32 @@
-.top-row{
-    .content{ font-weight: 100;
+.first{
+    .convert-bg{ background-image: url(/images/bg-1.jpg); background-position: top center;}
+}
+
+.head-menu{   font-weight: 100;
+    .cont{ height: 170px; display: flex; justify-content: space-between;  align-items: center; color: black; 
+        .logo{ width: 25%; font-size: 46px; font-weight: 100; }
+        .mid-block{ text-align: center;
+            .top{ font-size: 18px; line-height: 1.2; padding-bottom: 15px;
+                span{font-size: 24px; line-height: 1.2;}
+            }
+            .button-fancy{
+                .but{display: block; max-width: 350px; width: 100%; margin: 0 auto; text-decoration: none; cursor: pointer;  border: 2px solid black; height: 50px; font-size: 24px; font-weight: 100; display: flex; align-items: center; justify-content: center; color: black;}
+            }
+        }
+        .last-block{ text-align: center; width: 30%; 
+            .tel{text-decoration: none; display: block; text-align: center; color: black; font-size: 30px;}
+            .were-we{ font-size: 20px; text-align: center; padding-top: 10px; line-height: 1.2;}
+        }
+    }
+}
+.top-row{ background-color: rgba(255, 255, 255, 0.5); padding: 10px 0;
+    .content{ font-weight: 100; text-align: center; 
         h2{font-size: 59px; }
         p{font-size: 27px; }
     }
 }
 
-.first-wrap{ width: 100%; background-image: url(/images/3.jpg); background-attachment: fixed; background-position: bottom center;
+.first-wrap{ width: 100%; background-image: url(/images/3.jpg); background-attachment: fixed; background-position: center 70%;
     
 }
+
