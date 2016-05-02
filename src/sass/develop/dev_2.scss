@@ -1,3 +1,10 @@
-.first{ width: 100%; background-image: url(/images/3.jpg); background-attachment: fixed; background-position: bottom center;
+.top-row{
+    .content{ font-weight: 100;
+        h2{font-size: 59px; }
+        p{font-size: 27px; }
+    }
+}
+
+.first-wrap{ width: 100%; background-image: url(/images/3.jpg); background-attachment: fixed; background-position: bottom center;
     
 }
