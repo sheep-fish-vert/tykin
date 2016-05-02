@@ -79,6 +79,16 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 }
 
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
+@include font-face('MuseoSans', 'MuseoSansCyrl-100', 100);
+@include font-face('MuseoSans', 'MuseoSansCyrl_0', 300);
+@include font-face('MuseoSans', 'MuseoSansCyrl_1', 500);
+@include font-face('MuseoSans', 'MuseoSansCyrl_2', 700);
+@include font-face('MuseoSans', 'MuseoSansCyrl-900', 900);
 
+@include font-face('MuseoSans', 'MuseoSansCyrl-100Italic', 100, italic);
+@include font-face('MuseoSans', 'MuseoSansCyrl-300Italic', 300, italic);
+@include font-face('MuseoSans', 'MuseoSansCyrl-500Italic', 500, italic);
+@include font-face('MuseoSans', 'MuseoSansCyrl-700Italic', 700, italic);
+@include font-face('MuseoSans', 'MuseoSansCyrl-900Italic', 900, italic);
 
 /*/fonts*/
