@@ -4,18 +4,28 @@
 
 .head-menu{   font-weight: 100;
     .cont{ height: 170px; display: flex; justify-content: space-between;  align-items: center; color: black; 
-        .logo{ width: 25%; font-size: 46px; font-weight: 100; }
+        .logo, .logo2{ width: 25%; font-size: 46px; font-weight: 100; }
+        .logo2{display: none;}
         .mid-block{ text-align: center;
             .top{ font-size: 18px; line-height: 1.2; padding-bottom: 15px;
                 span{font-size: 24px; line-height: 1.2;}
             }
-            .button-fancy{
-                .but{display: block; max-width: 350px; width: 100%; margin: 0 auto; text-decoration: none; cursor: pointer;  border: 2px solid black; height: 50px; font-size: 24px; font-weight: 100; display: flex; align-items: center; justify-content: center; color: black;}
-            }
+            
         }
         .last-block{ text-align: center; width: 30%; 
-            .tel{text-decoration: none; display: block; text-align: center; color: black; font-size: 30px;}
+            .tel{text-decoration: none; display: block; text-align: center; color: black; font-size: 30px; transition: all 0.3s;
+                &:hover{color: #f2a12b;  }
+                &:active{color:  #f7c378;}
+            }
             .were-we{ font-size: 20px; text-align: center; padding-top: 10px; line-height: 1.2;}
+            .button-fancy{display: none;}
+        }
+    }
+    
+    .button-fancy{
+        .but{display: block; max-width: 350px; width: 100%; margin: 0 auto; text-decoration: none; cursor: pointer;  border: 2px solid black; height: 50px; font-size: 24px; font-weight: 100; display: flex; align-items: center; justify-content: center; color: black; transition: all 0.3s;
+            &:hover{background-color: #f2a12b; border-color: #f2a12b;  }
+            &:active{background-color: #f7c378; border-color:  #f7c378;}
         }
     }
 }
@@ -27,6 +37,54 @@
 }
 
 .first-wrap{ width: 100%; background-image: url(/images/3.jpg); background-attachment: fixed; background-position: center 70%;
-    
+    .mbox{display: flex; justify-content: space-between; align-items: center; height: 660px;}
+    .man-side{ position: relative; width: 580px; background-image: url(/images/man1.png); height: 660px; background-position: -71% 100%; background-repeat: no-repeat;
+        .dial{padding-top: 165px; font-size: 15px; width: 220px; text-align: center; }
+    }
+    .form-side{width: calc(100% - 580px);
+        .two-form{max-width: 450px; width: 100%; margin: 0 auto;}
+        .true-bg{ background-color: rgba(255,255,255, 0.8); box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.75); padding: 10px;
+            .content{ max-width: 365px; margin: 0 auto; }
+         }
+        form{  margin: 0 auto;
+            .contact-form-title{ text-align: center; padding-top: 30px;padding-bottom: 28px;
+                h5{ padding-bottom: 25px; font-size: 30px; font-weight: 100; }
+                p{ font-size: 15px; font-weight: 100; }
+            }
+            .contact-form-row{
+                .contact-form-item{ padding: 9px 0;
+                    input, textarea{ width: 100%; height: 53px; border: 1px solid black; padding-left: 15px; font-weight: 100; font-size: 19px; background-color: transparent; }
+                    textarea{resize: none; height: 105px; padding: 13px;}
+                }
+            }
+            .contact-form-row-submit{ padding-top: 21px;
+                button{width: 100%; height: 57px; background-color: #f2a12b; border: 1px solid #f2a12b; box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1); font-size: 30px; font-weight: 100; transition: all 0.3s;
+                    &:hover{background-color: #f7c378; border-color: #f7c378;box-shadow: none;}
+                    &:active{ background-color: #fbdbad; border-color: #fbdbad; box-shadow: none; }
+                }
+            }
+        }
+        .aftertext{ text-align: center;font-weight: 100; font-size: 15px; padding: 30px 5px 25px; }
+    }
+}
+
+.conteiner-about{ background-image: url(/images/st-bg.jpg); font-weight: 100; padding: 50px 0 100px;
+        .title-man{ margin-left: 125px; font-size: 39px; padding: 0 0  50px; }
+        .descript{padding-bottom: 82px; font-size: 20px; }
+        .stranger{display: flex; justify-content: space-between; align-items: center;
+            .some-text{width: 445px; line-height: 1.647; font-size: 17px; padding-left: 45px; }
+            .pop-block{ width: calc(100% - 445px); display: flex; justify-content: space-between; align-items: flex-start; align-content: flex-start;
+                a{display: block; text-decoration: none; width: 205px; height: auto;position: relative; 
+                    &:after{content: ''; position: absolute; top: calc(50% - 40px); left: calc(50% - 40px); width: 80px; height: 80px; border-radius: 50%; background-color: rgba(0,0,0,0.6); z-index: 2; opacity: 0; transition: opacity 0.3s; }                 
+                    &:before{content: ''; position: absolute; top: calc(50% - 25px;); left: calc(50% - 15px); width: 0; height: 0; border-style: solid; border-width: 25px 0 25px 40px; border-color: transparent transparent transparent white; z-index: 3;  opacity: 0; transition: opacity 0.3s;}
+                }
+                .video:hover{                   
+                    &:after{ opacity: 1; }                 
+                    &:before{opacity: 1; }
+                }
+                
+                
+            }
+        }
 }
 
