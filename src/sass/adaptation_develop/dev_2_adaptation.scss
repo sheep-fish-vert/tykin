@@ -10,19 +10,105 @@
 @media screen and (max-width: 1280px){
 
 }
+
+@media screen and (max-width: 1120px){
+    
+    /* first block */
+        .first-wrap .man-side { width: 55%; background-position: center bottom; background-size: contain;
+            .dial{width: 100%; text-align: center; padding-top: 70px;}
+        }
+        .first-wrap .form-side { width: 45%;}
+        
+        .conteiner-about .stranger {
+            .pop-block { width: calc(100% - 350px); }
+            .some-text { width: 350px; }
+        }
+    /* first block */
+    
+}
+
 @media screen and (max-width: 1024px){
 
 }
 @media screen and (max-width: 992px){
-
+    /* first block */
+        .head-menu .cont { display: block; height: auto; 
+            .mid-block{  width: 100%;
+                .top{padding-bottom: 0;}
+                .button-fancy{display: none;}
+            }
+            .logo{display: none;}
+            .logo2{ display: block; width: 100%; text-align: center; padding: 20px 0;}
+            .last-block{width: 100%; 
+                .button-fancy{display: block; padding: 10px 0;}
+            }
+        }
+        .first-wrap {
+            .mbox{height: 350px;}
+            .man-side {width: 100%; height: 350px; background-size: 290px 270px;  
+                .dial{max-width: 220px; padding-top: 20px; margin: 0 auto;}
+            }
+            .form-side {display: none;}
+        }
+        
+        .conteiner-about .stranger {
+            .pop-block { width: 100%; }
+            .some-text {display: none;}
+        }
+        
+        .first .ado-form{display: block;
+            .form-side{width: 100%;
+                .true-bg{box-shadow: none;}
+                form {
+                    .contact-form-title { padding: 20px 0;
+                        h5 {font-size: 25px; padding-bottom: 15px;}
+                        p{font-size: 12px;}
+                    }
+                    .contact-form-row-submit button {height: 48px; font-size: 25px;}
+                    .contact-form-row .contact-form-item {
+                        input, textarea{ font-size: 16px; height: 44px;}
+                        textarea{height: 88px;}
+                    } 
+                }
+                .aftertext {font-size: 12px; padding: 15px 5px 15px;}
+            }
+        }  
+    /* first block */
 }
 @media screen and (max-width: 767px){
-
+    /* first block */
+        .head-menu .cont {        
+            .mid-block .top{ font-size: 15px;
+                span {font-size: 20px;}
+            }
+            .button-fancy .but {font-size: 18px;}
+            .last-block .were-we {font-size: 18px;}
+        }
+        
+        .top-row { padding: 20px 0;
+            .content {
+                h2 {font-size: 32px; padding-bottom: 20px;}
+                p{font-size: 17px;}
+            }
+        }
+        .conteiner-about .stranger {
+            .pop-block { width: 100%; display: block; 
+                a{margin: 0 auto 10px;}            
+            }
+        }
+        .conteiner-about { padding: 25px 0;
+            .title-man { margin-left: 0; font-size: 24px; text-align: center;  padding-bottom: 10px; }
+            .descript{font-size: 15px; padding-bottom: 20px; max-width: 350px;margin: 0 auto; text-align: center;}
+        }
+    /* first block */
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
+    /* first block */
+        .conteiner-about .descript { text-align: left; }
+    /* first block */
 
 }
 @media screen and (max-width: 320px){
