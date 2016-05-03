@@ -61,7 +61,9 @@ button{width: 100%; height: 57px; background-color: #f2a12b; border: 1px solid #
                 }
                 .contact-form-row{
                     .contact-form-item{ padding: 9px 0;
-                        input, textarea{ width: 100%; height: 53px; border: 1px solid black; padding-left: 15px; font-weight: 100; font-size: 19px; background-color: transparent; }
+                        input, textarea{ width: 100%; height: 53px; border: 1px solid black; padding-left: 15px; font-weight: 100; font-size: 19px; background-color: transparent; 
+                            &.error{border: 1px solid red;}
+                        }
                         textarea{resize: none; height: 105px; padding: 13px;}
                     }
                 }
@@ -98,19 +100,143 @@ button{width: 100%; height: 57px; background-color: #f2a12b; border: 1px solid #
 /* big first block */ 
 
 /* fourth-block */
-    .fourth-block{width: 100%; background-image: url(/images/2.jpg); height: 800px; background-attachment: fixed; background-position: center center; font-weight: 100;
-        .title-text{ text-align: center;  max-width: 825px; margin: 0 auto; font-size: 46px; color: white;}
+    .fourth-block{width: 100%; background-image: url(/images/2.jpg); background-attachment: fixed; background-position: center center; font-weight: 100; padding-bottom: 50px;
+        .title-text{ text-align: center;  max-width: 825px; margin: 0 auto; font-size: 46px; color: white; padding: 50px 0 30px;}
         .continer-form{max-width: 825px; margin: 0 auto;  background-color: rgba(0,0,0,0.75); padding: 60px 20px 0 20px ;
+            form{position: relative;}
             .contact-form-title{ line-height: 1.2; color: white; text-align: center; font-size: 23px; padding-bottom: 40px; }
             
-            .contact-form-row{ display: flex; align-items: center; justify-content: space-between;
-                .row-part{padding: 0 13px;
+            .contact-form-row{ display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 10px;
+                .row-part{padding: 0 13px; width: 50%;
                     .contact-form-item{
-                        input, textarea{width: 100%; height: 50px; padding-bottom: 16px; }
+                        input, textarea{width: 100%; height: 50px; margin-bottom: 16px;  border: 1px solid white; background-color: transparent; color: white; font-size: 19px; padding-left: 20px; font-weight: 100; 
+                            &.error{border: 1px solid red;}
+                        }
+                        textarea{resize: none; height: 182px; padding-top: 20px;}                       
+                        
+                        ::-webkit-input-placeholder {color:white;}
+                        :-moz-placeholder {color:white;}
+                        ::-moz-placeholder {color:white;}
+                        :-ms-input-placeholder {color:white;}
                     }
                 }
                 
             }
+            .contact-form-row-submit{ max-width: 310px; width: 100%; margin: 0 auto;
+                button{box-shadow: inset 0px 0px 0px 1px black; font-size: 28px;
+                    &:hover, &:active{box-shadow: none;}
+                }
+            }
+            .after-text{text-align: center; color: white; padding: 35px 0 50px; font-size: 23px; font-weight: 100;}
+            
+        }
+    }   
+/* fourth-block */
+
+/* pretty */ 
+    .save-planet{ position: absolute; bottom: -50px;; width: 100%; height: 50px; background-color: transparent; overflow: hidden;
+        &:before{content: ''; position: absolute; right: 36px; top: -16px; width: 50%; box-shadow: 10px 15px 25px 15px rgba(0,0,0,0.75); transform: rotate(4deg); height: 1px;}
+        &:after{content: ''; position: absolute; left: 30px; top: -16px; width: 50%; box-shadow: 10px 15px 25px 15px rgba(0,0,0,0.75); transform: rotate(-4deg); height: 1px;}
+    }
+/* pretty */
+
+/* select */
+        .jq-selectbox.some-select{width: 100%; height: 50px; margin-bottom: 16px;
+            
+            .jq-selectbox__select{background: transparent; box-shadow: none; height: 50px; border-radius: 0; text-shadow: none; padding: 0 45px 0 0;
+                .jq-selectbox__select-text{width: 100% !important; font-size: 19px; font-weight: 100; color: white; height: 50px; line-height: 50px; padding-left: 20px; }
+                .jq-selectbox__trigger{ border: none;
+                    .jq-selectbox__trigger-arrow{width: 0;height: 0;border-style: solid;border-width: 15px 8.5px 0 8.5px;border-color: white transparent transparent transparent; top: 2 px; transition: all 0.5s;}   
+                }
+                
+            }
+            .jq-selectbox__dropdown{ box-shadow: none; border: 1px solid white; border-radius: 0; background: rgba(255,255,255,0.9);
+                ul li{ background: transparent; color: black; transition: all 0.3s;
+                    &:hover{background-color: white; color: black;}
+                }
+            }
+        }
+        .jq-selectbox.focused .jq-selectbox__select{border: 1px solid white;}
+        .jq-selectbox.opened .jq-selectbox__trigger .jq-selectbox__trigger-arrow{ transform: rotate(180deg);}
+/* select */
+
+
+/* six */ 
+    .six-wrap{width: 100%; background-image: url(/images/1.jpg); background-attachment: fixed; background-position: center center; padding-bottom: 50px; padding-top: 60px; overflow: hidden;
+        .convert{ width: 100%;
+            .form-block{ max-width: 1000px; margin: 0 auto; background-color: rgba(0,0,0,0.75); padding: 60px 20px 45px 20px ; 
+                form{ position: relative; color: white;
+                    .contact-form-title{ font-size: 64px; font-weight: 100; text-align: center; color: white; padding-bottom: 45px;}
+                    .contact-form-row{ max-width: 730px; width: 100%; margin: 0 auto;
+                        .row-part{ float: left; width: 50%; padding-right: 14px;
+                            &:nth-child(2){ padding-left: 14px; padding-right: 0px;}       
+                        }
+                        input, textarea {width: 100%; height: 50px; margin-bottom: 16px;  border: 1px solid white; background-color: transparent; color: white; font-size: 19px; padding-left: 20px; font-weight: 100;
+                            &.error{border: 1px solid red;}    
+                        }
+                        textarea{resize: none; height: 175px; padding-top: 20px;}    
+                        
+                            
+                    
+                        ::-webkit-input-placeholder {color:white;}
+                        :-moz-placeholder {color:white;}
+                        ::-moz-placeholder {color:white;}
+                        :-ms-input-placeholder {color:white;}
+                    }
+                    .contact-form-row-submit{ max-width: 305px; margin: 0 auto;
+                        button{box-shadow: inset 0px 0px 0px 1px black;
+                            &:hover, &:active{box-shadow: none;}
+                        }
+                    }
+                }
+            }
         }
     }
-/* fourth-block */
+/* six */ 
+
+/* eight */ 
+.eight-wrap{ background-image: url(/images/bg-8.jpg); width: 100%;
+    .special-text{padding-top: 40px; text-align: center; font-size: 41px; font-weight: 100;
+        span{font-size: 63px; line-height: 1.2; }
+        b{ font-size: 65px; display: block; line-height: 1.2; }
+        i{font-size: 23px; display: block; margin-top: -5px;}
+    }
+    .form-block{ max-width: 710px; width: 100%; margin: 0 auto; padding-top: 25px;
+        form{width: 100%; 
+            .contact-form-item{ width: 50%; float: left; padding-right: 10px; padding-bottom: 20px;
+                &:nth-child(2){padding-right: 0; padding-left: 10px;}
+            }
+            input, textarea{ width: 100%; height: 53px; border: 1px solid black; padding-left: 15px; font-weight: 100; font-size: 19px; background-color: transparent; 
+                &.error{border: 1px solid red;}
+            }
+            .contact-form-row-submit{ max-width: 375px; width: 100%; margin: 0 auto;
+                .contact-form-item{float: none; padding: 0; width: 100%;}
+             }
+        }      
+    }
+    .phone-call{text-align: center; padding: 25px 0 40px 0;
+        a{color: black; font-size: 39px; font-weight: 100; text-decoration: none;transition: all 0.3s;
+            &:hover{color: #f2a12b;  }
+            &:active{color:  #f7c378;}
+        }
+    }
+    .back-timer{ width: 200px; margin: 0 auto; padding-top: 30px;
+        .cont{ float: left; padding-right: 7px; width: 50%; position: relative;
+            &:nth-child(2){padding-right: 0; padding-left: 7px;
+                &:before{ content: ''; position: absolute;  width: 6px; height: 6px; background-color: #464e54; left: -3px; border-radius: 50%; top: 58px; animation: clip 1s ease-out infinite; }
+                &:after{ content: ''; position: absolute;  width: 6px; height: 6px; background-color: #464e54; left: -3px; border-radius: 50%; top: 38px; animation: clip 1s ease-out infinite; }
+            }
+            .t-box{ width: 100%; border: 3px solid #464e54; text-align: center; border-radius: 5px; background-color: rgba(255,255,255,0.6); 
+                .ciferki{line-height: 92px; font-size: 51px; font-weight: 100;}
+            }
+            .after-text{text-align: center; padding-top: 15px; font-size: 18px; font-weight: 100;}
+        }
+    }
+}
+
+@keyframes clip {
+    0%  {opacity: 1;}
+    50%  {opacity: 0;}
+    100%   {opacity: 1;}
+}
+/* eight */
