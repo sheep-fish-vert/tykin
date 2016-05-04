@@ -278,8 +278,9 @@ $(document).ready(function(){
             padding:'0'
         });
     });
- 
+
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('.second-block-form', {submitFunction:validationCall});
    validate('.mark1', {submitFunction:validationCall});
    validate('.mark2', {submitFunction:validationCall});
    validate('.mark3', {submitFunction:validationCall});
@@ -288,7 +289,7 @@ $(document).ready(function(){
    validate('.mark6', {submitFunction:validationCall});
    validate('.mark7', {submitFunction:validationCall});
    validate('.mark8', {submitFunction:validationCall});
-   
+
    Maskedinput();
    fancyboxForm();
 

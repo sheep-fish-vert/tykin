@@ -6,27 +6,50 @@
 
         $('.prety-circle-title').hover(
             function(){
-
-                clearTimeout(formIndexTimer);
-                $('.second-block-form-wrap').addClass('less-index');
-                $(this).parents('.prety-circle-item').addClass('hovered');
-                $(this).find('.prety-circle-popup').fadeIn(300);
+                if($(window).width() > 767){
+                    clearTimeout(formIndexTimer);
+                    $('.second-block-form-wrap').addClass('less-index');
+                    $(this).parents('.prety-circle-item').addClass('hovered');
+                    $(this).find('.prety-circle-popup').fadeIn(300);
+                }
 
             },
             function(){
-
-                formIndexTimer = setTimeout(function(){
-                    $('.second-block-form-wrap').removeClass('less-index');
-                }, 300);
-                $(this).parents('.prety-circle-item').removeClass('hovered');
-                $(this).find('.prety-circle-popup').fadeOut(300);
-
+                if($(window).width() > 767){
+                    formIndexTimer = setTimeout(function(){
+                        $('.second-block-form-wrap').removeClass('less-index');
+                    }, 300);
+                    $(this).parents('.prety-circle-item').removeClass('hovered');
+                    $(this).find('.prety-circle-popup').fadeOut(300);
+                }
             }
         );
 
     }
 
 /* /prety circle popup toggle */
+
+/* show hide mobile text in second-block */
+
+    function toggleMobileText(){
+        $('.mobile-button').click(function(){
+            var parent = $(this).parents('.prety-circle-text');
+            parent.find('.mobile-text').slideDown(300, function(){
+                parent.find('.mobile-button, .mobile-text').addClass('active');
+            });
+            $(this).slideUp(300);
+
+        });
+
+        $(window).resize(function(){
+            if($(window).width() > 767){
+                $('.mobile-button, .mobile-text').removeAttr('style');
+            }
+        });
+
+    };
+
+/* /show hide mobile text in second-block */
 
 /* prety circle scaling to 768 */
 
@@ -57,6 +80,7 @@ $(document).ready(function(){
 
     pretyCirclePopupToggle();
     pretyCircleScaling();
+    toggleMobileText();
 
 });
 
