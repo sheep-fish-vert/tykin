@@ -28,6 +28,7 @@
 }
 
 @media screen and (max-width: 1024px){
+    
 
 }
 @media screen and (max-width: 992px){
@@ -74,6 +75,45 @@
             }
         }  
     /* first block */
+    
+    /* nine */
+        .nine-wrap { background-color: #181a1f; background-image: none; padding-bottom: 20px;
+            .title-block{ padding-top: 40px; padding-bottom: 40px;
+                p { font-size: 28px;  max-width: 210px; margin: 0 auto;}
+                h2 {font-size: 23px;  padding-bottom: 40px;}
+            }
+            .conversion {display: block;
+                .item{min-width: 280px; max-width: 350px; width: 100%; height: auto; margin: 0 auto 15px; 
+                    .title-item {display: block; height: auto; font-size: 28px;}
+                    .contact .contact-tel {font-size: 31px;}
+                }
+            }
+        }
+        
+
+    /* nine */
+    
+    
+    /* ten */ 
+        .tenth-wrap {
+            .title-row {padding: 30px 0;}
+            .convert{display: block; padding-bottom: 0; 
+                .left-conteiner{width: 100%; padding-bottom: 0px; max-width: 480px; margin: 0 auto;
+                    .text { font-size: 17px; 
+                        p:first-child{padding-bottom: 25px;}
+                    }
+                    .mail-box{font-size: 17px;  padding: 25px 0;}
+                    .form{ margin: 0 -15px; max-width: calc(100% + 30px); box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.5);}
+                }
+                .right-conteiner{width: calc(100% + 30px); margin: 0 -15px;
+                    #map{border: none;}
+                }
+            }
+            .foot-row { padding-top: 20px; 
+                .desk-block { width: 40%; }
+            }
+        }
+    /* ten */
 }
 @media screen and (max-width: 767px){
     /* first block */
@@ -184,6 +224,16 @@
             
         }
     /* eight */
+    
+     /* ten */ 
+        .tenth-wrap{
+            .foot-row { display: block; background-color: white; margin: 0 -15px; padding: 20px 15px;
+                .cont .con-top a.tel {margin-bottom: 10px;}
+                .desk-block { width: 100%; padding-bottom: 25px; line-height: 1.3;}
+                .logo{text-align: center;}
+            }
+        } 
+    /* ten */
     
     
 }
