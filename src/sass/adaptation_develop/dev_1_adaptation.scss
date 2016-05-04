@@ -18,6 +18,57 @@
 }
 @media screen and (max-width: 767px){
 
+    /* second-block */
+
+        .second-block{
+
+            .title{font-size: 31px;text-align: center;line-height: 1.25;}
+
+            .prety-circle-mask{display: none;}
+
+            .prety-circle-main{height: auto;
+                .prety-circle-main-wrap{position: static;}
+                .prety-circle-item{margin-left:-15px!important;position: static;width:  calc(100% + 30px);height: auto;transform:rotate(0deg)!important;padding: 20px 20px 20px 20px;
+                    .prety-circle-content{width: auto!important;height:auto!important;position: static;transform:rotate(0deg)!important;
+                        .prety-circle-img{position: static;text-align: center;margin-bottom: 10px;}
+                        .prety-circle-title{top:0!important;left:0!important;margin:0 auto 20px auto!important;width: 260px!important;text-align: center!important;
+                            .prety-circle-title-wrap{cursor: default;
+                                p{display: inline-block;
+                                    span{margin:0 -3px;padding:0 3px;}
+                                }
+                            }
+                        }
+                        .prety-circle-descript{position: relative;width: 100%!important;top:0!important;left:0!important;max-width: 255px;text-align: center!important;padding-left:0!important;margin:0 auto 20px auto;
+                            &:before{position: relative;top:-3px!important;margin-right: 3px;}
+                        }
+                        .mobile-text{
+                            &.active{display: block;}
+                        }
+                        .mobile-button{display: flex;}
+                    }
+                    &.prety-1{background-color: #d1972e;}
+                    &.prety-2{background-color: #4d3a15;}
+                    &.prety-3{background-color: #248e95;}
+                    &.prety-4{background-color: #4b92ad;}
+                    &.prety-5{background-color: #0e3e5a;}
+                    &.prety-6{background-color: #890937;}
+                    &.prety-7{background-color: #5a2b27;}
+                    &.prety-8{background-color: #681212;}
+                }
+            }
+
+            .second-block-form-wrap{position: relative;left:0;top:0;transform:translate(0, 0);margin:0 -15px;padding: 28px 15px 48px 15px;background-image:url(/images/second-block-bg-mobile.jpg);background-position: center top;
+                .form-row{
+                    .form-input{
+                        input{max-width: none;}
+                    }
+                }
+            }
+
+        }
+
+    /* /second-block */
+
 }
 @media screen and (max-width: 666px){
 

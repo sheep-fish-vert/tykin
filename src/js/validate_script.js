@@ -265,7 +265,31 @@ function someAjax(item, someUrl, successFunc, someData){
 
 $(document).ready(function(){
 
+
+    $('.fancybox-form').click(function(e){
+        e.preventDefault();
+        $.fancybox.open('#call-popup',{
+            openEffect  : 'fade',
+            closeEffect : 'fade',
+            autoResize:true,
+            wrapCSS:'fancybox-form',
+            'closeBtn' : true,
+            fitToView:true,
+            padding:'0'
+        });
+    });
+
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('.second-block-form', {submitFunction:validationCall});
+   validate('.mark1', {submitFunction:validationCall});
+   validate('.mark2', {submitFunction:validationCall});
+   validate('.mark3', {submitFunction:validationCall});
+   validate('.mark4', {submitFunction:validationCall});
+   validate('.mark5', {submitFunction:validationCall});
+   validate('.mark6', {submitFunction:validationCall});
+   validate('.mark7', {submitFunction:validationCall});
+   validate('.mark8', {submitFunction:validationCall});
+
    Maskedinput();
    fancyboxForm();
 
