@@ -13,14 +13,45 @@
 @media screen and (max-width: 1024px){
 
 }
-@media screen and (max-width: 992px){
-
+@media screen and (max-width: 900px){
+    /*fifth-block*/
+        .fifth-block{
+            .fifth-wrap{
+                .title{}
+                .content{ display: block}
+                .item{ display: block; margin:0 auto;padding-bottom: 50px;
+                    .txt { font: 100 16px/19px 'MuseoSans'; color: #fff;
+                        p {
+                            &:first-child { font-size: 20px;padding: 7px 0 23px;}
+                        }
+                    }
+                }
+                .roun-block{margin-bottom: 16px; }
+                .round{ width: 242px; height: 242px; padding-top: 44px;
+                    p{font:100 20px/30px 'MuseoSans'; }
+                    b{ font-size:27px;}
+                }
+            }
+        }
+    /*END fifth-block*/
 }
 @media screen and (max-width: 767px){
 
 }
 @media screen and (max-width: 666px){
+    /*fifth-block*/
+    .fifth-block{ padding-top: 26px; padding-bottom: 13px;
+        .fifth-wrap{
+            .desctop{ display: none;}
+            .mobile{ display: block;}
+            .title{ padding-bottom: 23px;}
+            .item{ padding-bottom: 32px;
+                .img{ height: 85px;}
+            }
 
+        }
+    }
+    /*END fifth-block*/
 }
 @media screen and (max-width: 479px){
 

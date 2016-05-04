@@ -4,7 +4,8 @@ function googleMap(mapWrap){
         var myOptions = {
             zoom: 16,
             center: myLatlng,
-            disableDefaultUI: false, //без управляющих елементов
+            scrollwheel: false,
+            disableDefaultUI: true, //без управляющих елементов
             mapTypeId: google.maps.MapTypeId.ROADMAP, // SATELLITE - снимки со спутника,
             zoomControlOptions: {
                position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
@@ -46,8 +47,49 @@ function googleMap(mapWrap){
     initialize();
 }
 
+function setDatePickerRussian() {
+    $.datepicker.regional['ru'] = {
+        closeText: 'Закрыть',
+        prevText: '&#x3c;Пред',
+        nextText: 'След&#x3e;',
+        currentText: 'Сегодня',
+        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
+            'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+        dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+        dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+        dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+        dateFormat: 'dd/mm/yy',
+        firstDay: 1,
+        isRTL: false
+    };
+
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
+}
 
 $(document).ready(function(){
+    
+    
+    $('.body-menu').click(function(){
+        $('.bot-menu').addClass('show-this');
+        $('body').addClass('lock-body');
+    });
+    
+    $('.fancy-menu').click(function(){
+        $('.bot-menu').removeClass('show-this');
+        $('body').removeClass('lock-body');
+    });
+    
+    $('.close-menu').click(function(){
+        $('.bot-menu').removeClass('show-this');
+        $('body').removeClass('lock-body');
+    })
+    
+    
+    $('.button-up').click(function(){
+        $(scroller).stop().animate({scrollTop:0},800);
+    });
     
     googleMap('map');
     
@@ -64,7 +106,7 @@ $(document).ready(function(){
     
     setTimeout(function() {
         $('select').styler();
-    }, 100)
+    }, 100);
     
     var timeM = 60;
     var timeS = 00;
@@ -100,6 +142,17 @@ $(document).ready(function(){
       firstDay: 1,
       minDate: 1
     });
+    setDatePickerRussian() ;
+
+    $( window ).scroll(function() {
+        if($( window ).width() - $.scrollbarWidth() > 992 ){
+            if($(window).scrollTop() - $('.top-row').offset().top > 1){
+                $('header').addClass('show-header');
+            } else {
+                $('header').removeClass('show-header');
+            }
+        }
+    });
     
 });
 
@@ -108,5 +161,16 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
+
+    if($( window ).width() - $.scrollbarWidth() > 992 ){
+        if($(window).scrollTop() - $('.top-row').offset().top > 1){
+            $('header').addClass('show-header');
+        } else {
+            $('header').removeClass('show-header');
+        }
+    } else {
+        $('header').removeClass('show-header');
+    }
+
 
 });

@@ -11,6 +11,27 @@
 
 /* /helping adds*/
 
+/* ctext */
+
+    .ctext{
+        h1, h2, h3, h4, h5, h6{line-height: 1;margin-bottom: 20px;}
+        h6{font-size: 18px;}
+        h5{font-size: 22px;}
+        h4{font-size: 26px;}
+        h3{font-size: 30px;}
+        h2{font-size: 34px;}
+        h1{font-size: 38px;}
+        p{font-size: 17px;margin-bottom: 10px;line-height: 1;}
+        ul{padding: 0 10px;
+            li{padding-left: 15px;position:relative;margin-bottom: 10px;font-size: 17px;line-height: 1.15;
+                &:before{content:'';display: block;position: absolute;width: 9px;height: 9px;border-radius: 50%;background-color:#cc932a;left:0;top:5px;}
+                &:last-child{margin-bottom: 0;}
+            }
+        }
+    }
+
+/* /ctext */
+
 /* base styles*/
 *,*:before, *:after{box-sizing:border-box;outline:none;}
 *,body,html{-webkit-text-size-adjust: none;-webkit-appearance: none;max-height: 9001em;}
