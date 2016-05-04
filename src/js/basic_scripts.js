@@ -160,7 +160,7 @@ $(document).ready(function() {
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     goTo();
-    //animationBlock($('.setion-animate'));
+    animationBlock($('.setion-animate'));
 });
 
 $(window).resize(function() {

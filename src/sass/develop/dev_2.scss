@@ -151,7 +151,9 @@ input.error{border-color: red !important;}
 
 /* fourth-block */
     .fourth-block{width: 100%; background-image: url(/images/2.jpg); background-attachment: fixed; background-position: center center; font-weight: 100; padding-bottom: 50px;
-        .title-text{ text-align: center;  max-width: 825px; margin: 0 auto; font-size: 46px; color: white; padding: 50px 0 30px;}
+        .title-text{ text-align: center;  max-width: 825px; margin: 0 auto; font-size: 46px; color: white; padding: 50px 0 30px; opacity: 0; transition: all 0.5s;
+            &.animated{opacity: 1;}
+        }
         .continer-form{max-width: 825px; margin: 0 auto;  background-color: rgba(0,0,0,0.75); padding: 60px 20px 0 20px ;
             form{position: relative;}
             .contact-form-title{ line-height: 1.2; color: white; text-align: center; font-size: 23px; padding-bottom: 40px; }
@@ -217,7 +219,9 @@ input.error{border-color: red !important;}
         .convert{ width: 100%;
             .form-block{ max-width: 1000px; margin: 0 auto; background-color: rgba(0,0,0,0.75); padding: 60px 20px 45px 20px ; 
                 form{ position: relative; color: white;
-                    .contact-form-title{ font-size: 64px; font-weight: 100; text-align: center; color: white; padding-bottom: 45px;}
+                    .contact-form-title{ font-size: 64px; font-weight: 100; text-align: center; color: white; padding-bottom: 45px; opacity: 0; transition: all 0.5s;
+                        &.animated{opacity: 1;}
+                    }
                     .contact-form-row{ max-width: 730px; width: 100%; margin: 0 auto;
                         .row-part{ float: left; width: 50%; padding-right: 14px;
                             &:nth-child(2){ padding-left: 14px; padding-right: 0px;}       
@@ -248,7 +252,8 @@ input.error{border-color: red !important;}
 
 /* eight */ 
     .eight-wrap{ background-image: url(/images/bg-8.jpg); width: 100%;
-        .special-text{padding-top: 40px; text-align: center; font-size: 41px; font-weight: 100;
+        .special-text{padding-top: 40px; text-align: center; font-size: 41px; font-weight: 100;  opacity: 0; transition: all 0.5s;
+            &.animated{opacity: 1;}
             span{font-size: 63px; line-height: 1.2; }
             b{ font-size: 65px; display: block; line-height: 1.2; }
             i{font-size: 23px; display: block; margin-top: -5px;}
