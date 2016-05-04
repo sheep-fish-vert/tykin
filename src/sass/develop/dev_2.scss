@@ -3,9 +3,58 @@ button{width: 100%; height: 57px; background-color: #f2a12b; border: 1px solid #
     &:active{ background-color: #fbdbad; border-color: #fbdbad; box-shadow: none; }
 }
 
+.but{display: block; max-width: 350px; width: 100%; margin: 0 auto; text-decoration: none; cursor: pointer;  border: 2px solid black; height: 50px; font-size: 24px; font-weight: 100; display: flex; align-items: center; justify-content: center; color: black; transition: all 0.3s;
+    &:hover{background-color: #f2a12b; border-color: #f2a12b;  }
+    &:active{background-color: #f7c378; border-color:  #f7c378;}
+}
+
 .errorText{display: none !important;}
 
 input.error{border-color: red !important;}
+
+/* header */ 
+    header{ position: fixed; top: -120px; left: 0; right: 0;  background-color: white; z-index: 1111; box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75); transition: all 0.5s;
+        .convertation{ position: relative;
+            .button-up{position: absolute; width: 50px; text-align: center; left: 10%; top: 15px; font-size: 15px; font-weight: 100; cursor: pointer;
+                p{padding-top: 10px;}
+            }
+            .convert-main{max-width: 1140px; margin: 0 auto; height: 110px; padding-left: 50px;
+                .head-row{ display: flex; justify-content: space-between; align-items: center; height: 77px;}
+                .logo { width: 25%; font-size: 46px; font-weight: 100; }
+                .phone a{font-size: 30px; font-weight: 100; text-decoration: none; color: black;transition: all 0.3s;
+                    &:hover{color: #f2a12b;  }
+                    &:active{color:  #f7c378;}
+                }
+                .last{
+                    p{font-size: 15px; padding-bottom: 5px;}
+                    a{text-decoration: none;}
+                }
+                
+                .bot-menu{ 
+                    nav {
+                        ul{ display: flex; align-items: center; justify-content: space-around; height: 33px;
+                            li{ position: relative;
+                                a{display: block; text-decoration: none;  font-size: 16px; font-weight: 100;  padding-left: 10px; color: black; transition: all 0.3s;
+                                    &:hover{color: #f2a12b;  
+                                        &:before{background-color: #f2a12b;}
+                                    }
+                                    &:active{color:  #f7c378;
+                                        &:before{background-color: #f7c378;}
+                                    }
+                                    &:before{content: ''; position: absolute; left: 0; top: calc(50% - 2.5px); width: 5px; height: 5px; background-color: black; transition: all 0.3s;}
+                                    
+                                }
+                            }
+                        }
+                    }
+                 }
+            }
+        }
+    }
+    .show-header{top: 0;}
+    .menu-mobile{display: none;}
+    .close-menu{display: none;}
+/* header */
 
 /* big first block */ 
     .first{
@@ -34,10 +83,7 @@ input.error{border-color: red !important;}
         }
         
         .button-fancy{
-            .but{display: block; max-width: 350px; width: 100%; margin: 0 auto; text-decoration: none; cursor: pointer;  border: 2px solid black; height: 50px; font-size: 24px; font-weight: 100; display: flex; align-items: center; justify-content: center; color: black; transition: all 0.3s;
-                &:hover{background-color: #f2a12b; border-color: #f2a12b;  }
-                &:active{background-color: #f7c378; border-color:  #f7c378;}
-            }
+            
         }
     }
     .top-row{ background-color: rgba(255, 255, 255, 0.5); padding: 10px 0;

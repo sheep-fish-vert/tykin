@@ -5,7 +5,7 @@ function googleMap(mapWrap){
             zoom: 16,
             center: myLatlng,
             scrollwheel: false,
-            disableDefaultUI: false, //без управляющих елементов
+            disableDefaultUI: true, //без управляющих елементов
             mapTypeId: google.maps.MapTypeId.ROADMAP, // SATELLITE - снимки со спутника,
             zoomControlOptions: {
                position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
@@ -70,6 +70,27 @@ function setDatePickerRussian() {
 
 $(document).ready(function(){
     
+    
+    $('.body-menu').click(function(){
+        $('.bot-menu').addClass('show-this');
+        $('body').addClass('lock-body');
+    });
+    
+    $('.fancy-menu').click(function(){
+        $('.bot-menu').removeClass('show-this');
+        $('body').removeClass('lock-body');
+    });
+    
+    $('.close-menu').click(function(){
+        $('.bot-menu').removeClass('show-this');
+        $('body').removeClass('lock-body');
+    })
+    
+    
+    $('.button-up').click(function(){
+        $(scroller).stop().animate({scrollTop:0},800);
+    });
+    
     googleMap('map');
     
     
@@ -85,7 +106,7 @@ $(document).ready(function(){
     
     setTimeout(function() {
         $('select').styler();
-    }, 100)
+    }, 100);
     
     var timeM = 60;
     var timeS = 00;
@@ -122,6 +143,16 @@ $(document).ready(function(){
       minDate: 1
     });
     setDatePickerRussian() ;
+
+    $( window ).scroll(function() {
+        if($( window ).width() - $.scrollbarWidth() > 992 ){
+            if($(window).scrollTop() - $('.top-row').offset().top > 1){
+                $('header').addClass('show-header');
+            } else {
+                $('header').removeClass('show-header');
+            }
+        }
+    });
     
 });
 
@@ -130,5 +161,16 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
+
+    if($( window ).width() - $.scrollbarWidth() > 992 ){
+        if($(window).scrollTop() - $('.top-row').offset().top > 1){
+            $('header').addClass('show-header');
+        } else {
+            $('header').removeClass('show-header');
+        }
+    } else {
+        $('header').removeClass('show-header');
+    }
+
 
 });

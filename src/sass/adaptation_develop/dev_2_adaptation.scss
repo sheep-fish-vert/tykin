@@ -4,18 +4,24 @@
 @media screen and (max-width: 1600px){
 
 }
-@media screen and (max-width: 1366px){
-
+@media screen and (max-width: 1450px){
+    header .convertation .button-up { left: 10px;}
 }
 @media screen and (max-width: 1280px){
-
+    
+    /* header */
+        header .convertation .convert-main {padding-left: 90px;}
+    /* header */
 }
 
 @media screen and (max-width: 1120px){
     
     /* first block */
-        .first-wrap .man-side { width: 55%; background-position: center bottom; background-size: contain;
-            .dial{width: 100%; text-align: center; padding-top: 70px;}
+        
+        .first-wrap { 
+            .man-side { width: 55%; background-position: center bottom; background-size: contain;
+                .dial{width: 100%; text-align: center; padding-top: 70px;}
+            }
         }
         .first-wrap .form-side { width: 45%;}
         
@@ -32,7 +38,34 @@
 
 }
 @media screen and (max-width: 992px){
+    /* header */
+        header{ position: absolute; top: 0;background-color: transparent; box-shadow: none; height: 50px; padding: 8px 0;
+            .button-up{display: none;}
+            .convertation .convert-main { padding: 0;
+                .head-row {display: none;}
+            } 
+        }
+        .menu-mobile{display: block; max-width: 115px; margin: 0 auto; border: 1px solid black; border-radius: 4px; cursor: pointer;
+            .conv-o{padding: 7px 9px; float: left;}    
+            .tex{line-height: 33px; font-size: 20px; text-transform: uppercase;}        
+        }
+         header .convertation .convert-main .bot-menu {position: fixed; left: -120%; top:0px;  bottom: 0; transition: all 0.3s; overflow: hidden; width: 100vw; 
+            .close-menu{display: block; position: absolute; top: 12px;  right: 25px; background-image: url(/images/close.png);  background-position: center center; width: 26px; height: 26px; cursor: pointer;}
+            .menu-mobile{margin-bottom: 10px;}
+            nav ul { height: calc(100vh - 51px) ; flex-wrap: wrap; text-align: center; flex-direction: column; align-content: space-around;
+                li{}
+            }
+        }
+        
+
+        header .convertation .convert-main .bot-menu.show-this{display: block; position: fixed; top:0px; left: 0; right: 0; bottom: 0; background-color: white; padding: 8px;}
+        
+        .lock-body{ width: 100vw; height: 100vh; overflow: hidden; }
+    /* header */
+    
     /* first block */
+        .first .convert-bg{padding-top: 70px;}
+        
         .head-menu .cont { display: block; height: auto; 
             .mid-block{  width: 100%;
                 .top{padding-bottom: 0;}
