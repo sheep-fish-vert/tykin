@@ -75,14 +75,15 @@ function goTo(){
     $('.bot-menu>nav>ul>li>a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
-        var target = $(href).offset().top-110;
+        var targetHeight = 110;
         var timeAnim = 500 ;
         if ( $('body').hasClass('lock-body') ){
             $('body').removeClass('lock-body');
             $('.bot-menu').removeClass('show-this');
             timeAnim = 1500;
-            
+            targetHeight = 0;
         }
+        var target = $(href).offset().top - targetHeight;
         $(scroller).stop().animate({scrollTop:target},timeAnim);
     });
 }
@@ -159,7 +160,7 @@ $(document).ready(function() {
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     goTo();
-    //animationBlock($('.setion-animate'));
+    animationBlock($('.setion-animate'));
 });
 
 $(window).resize(function() {
