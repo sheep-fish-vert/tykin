@@ -1,0 +1,33 @@
+/*fifth-block*/
+    .fifth-block{ background-image: url(/images/fifthBG.png); background-size:cover; background-position: center; padding-top: 61px;     padding-bottom: 76px;
+        .fifth-wrap{ text-align: center;
+            .desctop{ display: block;}
+            .mobile{ display: none;}
+            .title{font:100 31px/31px 'MuseoSans'; color:#fff; position: relative;padding-bottom: 57px;
+                h2{ display: inline-block;  vertical-align: top; margin: 3px 10px;}
+                &:before,
+                &:after{ display: inline-block; background-image: url(/images/title-fifth.png); width: 53px; height: 43px; content: '';}
+            }
+            .content{ display: flex; justify-content: space-between;    max-width: 1005px;  margin: 0 auto;
+                &.last{}
+            }
+            .item{max-width: 405px; width: 100%; display: inline-block;
+                .img{height: 140px; position: relative;
+                    img{ position: absolute; max-width: none; left: 50%; top: 50%;transform: translate(-50%, -50%);}
+                }
+                .txt{font:100 18px/22px 'MuseoSans'; color:#fff;
+                    p{
+                        &:first-child{ font-size:23px; position: relative; padding: 21px 0 29px;
+                            &:after{ position: absolute; content: ''; display: block; background-image: url(/images/shadtext.png); background-position: center; width: 342px; height: 41px; left:calc(50% - 171px); opacity: 0.3;bottom: -24px;}
+                        }
+                    }
+                }
+            }
+            .roun-block{width: 100%; text-align: center;    margin-bottom: -98px;}
+            .round{border-radius: 50%; display: inline-block; width: 356px; height: 356px; border:2px solid #fff; text-align: center; padding-top: 65px;
+                p{font:100 29px/46px 'MuseoSans'; color:#fff;}
+                b{ font-size:40px;}
+            }
+        }
+    }
+/*END fifth-block*/
