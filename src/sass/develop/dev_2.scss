@@ -379,8 +379,9 @@ input.error{border-color: red !important;}
     }
 
     .fancybox-wrap{
-        .fancybox-close{ top: 0; right: -40px; width: 31px; height: 31px; background-image: url(/images/amin.png);}
-    }
+        .fancybox-close{ top: 0; right: -40px; width: 31px; height: 31px; background-image: url(/images/amin.png); background-size: 31px 31px;}
+    } 
+    
 
     #call_success{ background-image: url(/images/succ.jpg); background-size: cover;
         .call-success{ width: 500px; height: 330px; display: flex; align-items: center; align-content: center; justify-content: center;

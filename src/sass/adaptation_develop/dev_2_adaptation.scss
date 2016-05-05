@@ -273,7 +273,9 @@
     
     /* hidden block */ 
         .fancybox-wrap .fancybox-close {top: -40px; right: 0;}
-         #call-popup .convert{width: 100%; padding: 20px 10px; min-width: 280px; height: auto;}
+         #call-popup .convert{width: 100%; padding: 20px 10px; min-width: 280px; height: auto;
+            button{font-size: 24px;}
+         }
          
          #call_success{ 
             .call-success{width: 100%;  padding: 0 10px; } 
