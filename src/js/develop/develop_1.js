@@ -10,7 +10,7 @@
                     clearTimeout(formIndexTimer);
                     $('.second-block-form-wrap').addClass('less-index');
                     $(this).parents('.prety-circle-item').addClass('hovered');
-                    $(this).find('.prety-circle-popup').fadeIn(300);
+                    $(this).find('.prety-circle-popup').stop().fadeIn(300);
                 }
 
             },
@@ -20,7 +20,7 @@
                         $('.second-block-form-wrap').removeClass('less-index');
                     }, 300);
                     $(this).parents('.prety-circle-item').removeClass('hovered');
-                    $(this).find('.prety-circle-popup').fadeOut(300);
+                    $(this).find('.prety-circle-popup').stop().fadeOut(300);
                 }
             }
         );
