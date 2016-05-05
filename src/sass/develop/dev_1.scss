@@ -16,8 +16,8 @@
                     .form-input{
                         input{background-color: transparent;max-width:300px;width: 100%;border:2px solid #fff;line-height: 23px;font-size: 19px;font-weight: 100;color:#fff;padding: 10px 10px 10px 10px;
                             &::-webkit-input-placeholder {color:#fff;font-family:'MuseoSans',sans-serif;font-weight: 100;}
-                            &:-moz-placeholder {color:#fff;font-family:'MuseoSans',sans-serif;font-weight: 100;}
-                            &::-moz-placeholder {color:#fff;font-family:'MuseoSans',sans-serif;font-weight: 100;}
+                            &:-moz-placeholder {color:#fff;font-family:'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+                            &::-moz-placeholder {color:#fff;font-family:'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
                             &:-ms-input-placeholder {color:#fff;font-family:'MuseoSans',sans-serif;font-weight: 100;}
                         }
                     }

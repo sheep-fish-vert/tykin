@@ -80,8 +80,8 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 input, textarea{font-family: 'MuseoSans',sans-serif;
     ::-webkit-input-placeholder {color:#212121;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-    :-moz-placeholder {color:#212121;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-    ::-moz-placeholder {color:#212121;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
+    :-moz-placeholder {color:#212121;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+    ::-moz-placeholder {color:#212121;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
     :-ms-input-placeholder {color:#212121;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
 }
 
