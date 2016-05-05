@@ -2,7 +2,9 @@
 
     .second-block{background-image:url(/images/second-block-bg.jpg);background-repeat: no-repeat;background-position: center top;padding-top: 80px;overflow: hidden;
 
-        .title{font-weight: 100;font-size: 53px;color:#fff;line-height: 1;max-width: 565px;margin:0 auto  60px auto;}
+        .title{font-weight: 100;font-size: 53px;color:#fff;line-height: 1;max-width: 565px;margin:0 auto  60px auto;opacity: 0;transition:opacity 300ms ease;
+            &.animated{opacity: 1;}
+        }
 
         .second-block-wrap{position: relative;}
 

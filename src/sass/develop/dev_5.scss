@@ -11,7 +11,8 @@
             .content{ display: flex; justify-content: space-between;    max-width: 1005px;  margin: 0 auto;
                 &.last{}
             }
-            .item{max-width: 405px; width: 100%; display: inline-block;
+            .item{max-width: 405px; width: 100%; display: inline-block;opacity:0;transition:opacity 300ms ease;
+                &.animated{opacity: 1;}
                 .img{height: 140px; position: relative;
                     img{ position: absolute; max-width: none; left: 50%; top: 50%;transform: translate(-50%, -50%);}
                 }
