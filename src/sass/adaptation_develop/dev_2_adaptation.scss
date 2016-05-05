@@ -149,6 +149,9 @@
     /* ten */
 }
 @media screen and (max-width: 767px){
+    
+    .first-wrap { background-attachment: initial;  background-position: center 80%;}
+    
     /* first block */
         .head-menu .cont {        
             .mid-block .top{ font-size: 15px;
@@ -285,6 +288,8 @@
     /* first block */
         .conteiner-about .descript { text-align: left; }
     /* first block */
+    
+    
 
 }
 @media screen and (max-width: 320px){
