@@ -13,14 +13,16 @@
 @media screen and (max-width: 1024px){
 
 }
+
 @media screen and (max-width: 992px){
+// Third block
 	.third{
 		.third-background{
 			.mbox{
 				.advantages{
 					.advantage-headding{
-						.cover{padding:0 100px;
-							.shadow{top: 110px;
+						.cover{padding: 0 100px;
+							.shadow{top: 120px;
 								
 							}
 							
@@ -32,16 +34,33 @@
 	}
 }
 @media screen and (max-width: 767px){
+	.third{
+		.third-background{
+			.mbox{
+				.advantages{
+					.advantage-headding{
+						.cover{font-size: 31px;padding: 0 0;
+							.shadow{top: 55px;left: 20px;
+								
+							}
+							
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
 @media screen and (max-width: 666px){
+// Third block
 .third{
 		.third-background{
 			.mbox{
 				.advantages{
 					.advantage-headding{
-						.cover{padding:0 0px;
-							.shadow{top: 110px;
+						.cover{padding:0 70px;
+							.shadow{left: 20px; top: 65px; padding: 0 70px;
 								
 							}
 							
@@ -58,8 +77,8 @@
 			.mbox{
 				.advantages{
 					.advantage-headding{
-						.cover{padding:0 40px;font-size:43px;
-							.shadow{top: 150px; left: 20px;
+						.cover{padding:0 0px;
+							.shadow{top: 65px;padding: 0 0;
 								
 							}
 							
