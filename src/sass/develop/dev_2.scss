@@ -113,8 +113,8 @@ input.error{border-color: red !important;}
                     .contact-form-item{ padding: 9px 0;
                         input, textarea{ width: 100%; height: 53px; border: 1px solid black; padding-left: 15px; font-weight: 100; font-size: 19px; background-color: transparent;
                             &::-webkit-input-placeholder {color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                            &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                            &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
+                            &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+                            &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
                             &:-ms-input-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
                             &.error{border: 1px solid red;}
                         }
@@ -167,16 +167,16 @@ input.error{border-color: red !important;}
                     .contact-form-item{
                         input, textarea{width: 100%; height: 50px; margin-bottom: 16px;  border: 1px solid white; background-color: transparent; color: white; font-size: 19px; padding-left: 20px; font-weight: 100;
                             &::-webkit-input-placeholder {color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                            &:-moz-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                            &::-moz-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
+                            &:-moz-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+                            &::-moz-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
                             &:-ms-input-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
                             &.error{border: 1px solid red;}
                         }
                         textarea{resize: none; height: 182px; padding-top: 20px;}
 
                         ::-webkit-input-placeholder {color:white;}
-                        :-moz-placeholder {color:white;}
-                        ::-moz-placeholder {color:white;}
+                        :-moz-placeholder {color:white;opacity:1!important;}
+                        ::-moz-placeholder {color:white;opacity:1!important;}
                         :-ms-input-placeholder {color:white;}
                     }
                 }
@@ -236,8 +236,8 @@ input.error{border-color: red !important;}
                         }
                         input, textarea {width: 100%; height: 50px; margin-bottom: 16px;  border: 1px solid white; background-color: transparent; color: white; font-size: 19px; padding-left: 20px; font-weight: 100;
                             &::-webkit-input-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                            &:-moz-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                            &::-moz-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
+                            &:-moz-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+                            &::-moz-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
                             &:-ms-input-placeholder{color:#fff;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
                             &.error{border: 1px solid red;}
                         }
@@ -246,8 +246,8 @@ input.error{border-color: red !important;}
 
 
                         ::-webkit-input-placeholder {color:white;}
-                        :-moz-placeholder {color:white;}
-                        ::-moz-placeholder {color:white;}
+                        :-moz-placeholder {color:white;opacity:1!important;}
+                        ::-moz-placeholder {color:white;opacity:1!important;}
                         :-ms-input-placeholder {color:white;}
                     }
                     .contact-form-row-submit{ max-width: 305px; margin: 0 auto;
@@ -277,8 +277,8 @@ input.error{border-color: red !important;}
                 }
                 input, textarea{ width: 100%; height: 53px; border: 1px solid black; padding-left: 15px; font-weight: 100; font-size: 19px; background-color: transparent;
                     &::-webkit-input-placeholder {color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                    &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                    &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
+                    &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+                    &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
                     &:-ms-input-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
                     &.error{border: 1px solid red;}
                 }
@@ -335,8 +335,8 @@ input.error{border-color: red !important;}
                         .contact-form-row-submit{padding-top: 10px;}
                         input{width: 100%; height: 45px; background-color: transparent; border: 2px solid black; padding-left: 16px;  font-size: 19px; font-family: 'MuseoSans',sans-serif;font-weight: 100;
                             &::-webkit-input-placeholder {color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                            &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                            &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
+                            &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+                            &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
                             &:-ms-input-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
                         }
                         button { height: 50px; font-size: 23px;}
@@ -368,8 +368,8 @@ input.error{border-color: red !important;}
                     .contact-form-item-input{padding-bottom: 15px;}
                     input{width: 100%; height: 54px; border: 1px solid black; padding-left: 7px; font-size: 19px; color: black; background-color: transparent; font-weight: 100;
                         &::-webkit-input-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                        &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                        &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
+                        &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+                        &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
                         &:-ms-input-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
                     }
                 }
@@ -380,8 +380,8 @@ input.error{border-color: red !important;}
 
     .fancybox-wrap{
         .fancybox-close{ top: 0; right: -40px; width: 31px; height: 31px; background-image: url(/images/amin.png); background-size: 31px 31px;}
-    } 
-    
+    }
+
 
     #call_success{ background-image: url(/images/succ.jpg); background-size: cover;
         .call-success{ width: 500px; height: 330px; display: flex; align-items: center; align-content: center; justify-content: center;
@@ -423,8 +423,8 @@ input.error{border-color: red !important;}
                     .contact-form-row-submit{}
                     input{width: 100%; height: 50px; padding-left: 10px; border: 2px solid black; background-color: transparent;font-size: 22px; font-weight: 100;
                         &::-webkit-input-placeholder {color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                        &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
-                        &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
+                        &:-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
+                        &::-moz-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;opacity:1!important;}
                         &:-ms-input-placeholder{color:#000;font-size: 19px;font-family: 'MuseoSans',sans-serif;font-weight: 100;}
                     }
                     button{height: 53px; font-size: 22px;}
