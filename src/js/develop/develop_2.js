@@ -1,7 +1,7 @@
 var map;
-function googleMap(mapWrap){
+function googleMap(mapWrap) {
     function initialize() {
-        var myLatlng = new google.maps.LatLng(cordX,cordY);
+        var myLatlng = new google.maps.LatLng(cordX, cordY);
         var myOptions = {
             zoom: 16,
             center: myLatlng,
@@ -9,7 +9,7 @@ function googleMap(mapWrap){
             disableDefaultUI: true, //без управляющих елементов
             mapTypeId: google.maps.MapTypeId.ROADMAP, // SATELLITE - снимки со спутника,
             zoomControlOptions: {
-               position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
+                position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
             }
         }
         map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
@@ -31,17 +31,17 @@ function googleMap(mapWrap){
         /*анимация при клике на маркер*/
         marker.addListener('click', toggleBounce);
         function toggleBounce() {
-          if (marker.getAnimation() !== null) {
-            marker.setAnimation(null);
-          } else {
-            marker.setAnimation(google.maps.Animation.BOUNCE);
-          }
+            if (marker.getAnimation() !== null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
         }
         /*/анимация при клике на маркер*/
 
         /*По клику открываеться инфоблок*/
-        google.maps.event.addListener(marker, 'click', function() {
-           // infowindow.open(map,marker);
+        google.maps.event.addListener(marker, 'click', function () {
+            // infowindow.open(map,marker);
         });
 
     }
@@ -69,102 +69,101 @@ function setDatePickerRussian() {
     $.datepicker.setDefaults($.datepicker.regional['ru']);
 }
 
-$(document).ready(function(){
-    
-    
-    $('.body-menu').click(function(){
+$(document).ready(function () {
+
+
+    $('.body-menu').click(function () {
         $('.bot-menu').addClass('show-this');
         $('body').addClass('lock-body');
     });
-    
-    $('.fancy-menu').click(function(){
+
+    $('.fancy-menu').click(function () {
         $('.bot-menu').removeClass('show-this');
         $('body').removeClass('lock-body');
     });
-    
-    $('.close-menu').click(function(){
+
+    $('.close-menu').click(function () {
         $('.bot-menu').removeClass('show-this');
         $('body').removeClass('lock-body');
     })
-    
-    
-    $('.button-up').click(function(){
-        $(scroller).stop().animate({scrollTop:0},800);
+
+
+    $('.button-up').click(function () {
+        $(scroller).stop().animate({ scrollTop: 0 }, 800);
     });
-    
+
     googleMap('map');
-    
-    
-    $('.grouped_elements').click(function(){
-        
+
+
+    $('.grouped_elements').click(function () {
+
         $.fancybox({
             href: this.href,
             type: $(this).data("type")
         });
         return false;
     });
-    
-    
-    setTimeout(function() {
+
+
+    setTimeout(function () {
         $('select').styler();
     }, 100);
-    
-    var timeM = 60;
-    var timeS = 00;
-    
-    setInterval(function(){
-        if(timeS == 0) {
+
+    var timeM = log_h;
+    var timeS = log_m;
+
+    setInterval(function () {
+        if (timeS == 0) {
             timeS = 59;
             timeM = timeM - 1;
-            
+
             if (timeM < 10) {
-                $('.minutes').html('0'+ timeM);
+                $('.minutes').html('0' + timeM);
             } else {
                 $('.minutes').html(timeM);
-            } 
-            
+            }
+
         } else {
             timeS = timeS - 1;
         }
-        
+
         if (timeS < 10) {
-            $('.seconds').html('0'+ timeS);
+            $('.seconds').html('0' + timeS);
         } else {
             $('.seconds').html(timeS);
         }
-        
-          
-   
+
     }, 1000);
     
-    $('.time-picker').wickedpicker({twentyFour: true, title: 'Время звонка'});
-    
-    $( "#datepicker" ).datepicker({
-      firstDay: 1,
-      minDate: 1
-    });
-    setDatePickerRussian() ;
 
-    $( window ).scroll(function() {
-        if($( window ).width() - $.scrollbarWidth() > 992 ){
-            if($(window).scrollTop() - $('.top-row').offset().top > 1){
+    $('.time-picker').wickedpicker({ twentyFour: true, title: 'Время звонка' });
+
+    $("#datepicker").datepicker({
+        firstDay: 1,
+        minDate: 1
+    });
+    setDatePickerRussian();
+
+    $(window).scroll(function () {
+        if ($(window).width() - $.scrollbarWidth() > 992) {
+            if ($(window).scrollTop() - $('.top-row').offset().top > 1) {
                 $('header').addClass('show-header');
             } else {
                 $('header').removeClass('show-header');
             }
         }
     });
-    
-});
-
-$(window).load(function(){
 
 });
 
-$(window).resize(function(){
+$(window).load(function () {
 
-    if($( window ).width() - $.scrollbarWidth() > 992 ){
-        if($(window).scrollTop() - $('.top-row').offset().top > 1){
+});
+
+$(window).resize(function () {
+
+    if ($(window).width() - $.scrollbarWidth() > 992) {
+        if ($(window).scrollTop() - $('.top-row').offset().top > 1) {
             $('header').addClass('show-header');
         } else {
             $('header').removeClass('show-header');
@@ -172,7 +171,7 @@ $(window).resize(function(){
     } else {
         $('header').removeClass('show-header');
     }
-    
+
     if ($(window).width() < 992) {
         map.set('draggable', false);
     }
