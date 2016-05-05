@@ -1,3 +1,4 @@
+var map;
 function googleMap(mapWrap){
     function initialize() {
         var myLatlng = new google.maps.LatLng(cordX,cordY);
@@ -11,7 +12,7 @@ function googleMap(mapWrap){
                position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
             }
         }
-        var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
+        map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
 
 
         //больше - http://map-icons.com/
@@ -171,6 +172,13 @@ $(window).resize(function(){
     } else {
         $('header').removeClass('show-header');
     }
+    
+    if ($(window).width() < 992) {
+        map.set('draggable', false);
+    }
+    else {
+        map.set('draggable', true);
+    };
 
 
 });
